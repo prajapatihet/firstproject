@@ -1,4 +1,12 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+
+def homePage(req):
+    data={
+        'title': 'Home New Page',
+        'bdata' : 'Welcome to Home Pages'
+    }
+    return render(req,"index.html",data)
 
 def aboutUs(req):
     return HttpResponse("<h1><b>Welcome to MyPage</b></h1>")

@@ -4,6 +4,7 @@ from firstproject import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.homePage),
     path('about-us/',views.aboutUs),
     path('course/',views.courses),
     path('courseStr/<str:courseid>',views.courseDetails1),
