@@ -28,7 +28,21 @@
             {% for n in clist %}<div>{{forloop.last}} {{n}}</div>{% endfor %}   
             
         </br>
+        <h1>ForLoop for Dictionary type obj</h1>
 
+        <table border='1' cellpadding='10'>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+            </tr>
+
+            {% for d in student_details %}
+            <tr>
+                <th>{{d.name}}</th>
+                <th>{{d.phone}}</th>
+            </tr>
+            {% endfor %} 
+        </table>
         </div>  
     </body>
 </html>

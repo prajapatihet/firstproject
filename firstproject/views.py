@@ -6,7 +6,7 @@ def homePage(req):
         'title': 'Home New Page',
         'bdata' : 'Welcome to Home Pages',
         'clist': ['PHP','Java','Django'],
-        'student-details':[
+        'student_details':[
             {'name':'het','phone':'9265504653'},
             {'name':'deep','phone':'9265154653'},
         ]
