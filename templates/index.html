@@ -12,8 +12,23 @@
         </style>
     </head>
     <body>
-        <div class="main">
-            {{bdata}}
+        <div>
+            <h1>For Loop for List or Array</h1>
+            <h3>forloop.counter</h3> 
+            {% for n in clist %}<div>{{forloop.counter}} {{n}}</div>{% endfor %}
+            <h3>forloop.counter0</h3>           
+            {% for n in clist %}<div>{{forloop.counter0}} {{n}}</div>{% endfor %} 
+            <h3>forloop.revcounter</h3>            
+            {% for n in clist %}<div>{{forloop.revcounter}} {{n}}</div>{% endfor %}   
+            <h3>forloop.revcounter0</h3>      
+            {% for n in clist %}<div>{{forloop.revcounter0}} {{n}}</div>{% endfor %}  
+            <h3>forloop.first</h3>          
+            {% for n in clist %}<div>{{forloop.first}} {{n}}</div>{% endfor %}        
+            <h3>forloop.last</h3>     
+            {% for n in clist %}<div>{{forloop.last}} {{n}}</div>{% endfor %}   
+            
+        </br>
+
         </div>  
     </body>
 </html>
